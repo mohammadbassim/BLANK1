@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+    <script>
+        function openLink(url) {
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            var isiOS = /iPad|iPhone|iPod/.test(userAgent) && !window.MSStream;
+
+            if (isiOS) {
+                alert("For security reasons, this link cannot be opened in the app. Please open it in your device's browser.");
+            } else {
+                window.open(url, '_blank');
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <h1>Welcome to Your Website</h1>
+
+    <p>This is your website content.</p>
+
+    <p>This is a link that will open only in an external browser:</p>
+    <button onclick="openLink('https://mohammadbassim.github.io/BLANK1/')">Open External Link</button>
+
+</body>
+
+</html>
